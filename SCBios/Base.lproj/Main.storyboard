@@ -17,13 +17,73 @@
                     <view key="view" contentMode="scaleToFill" id="nAY-6t-B2p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="280" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="asT-Yk-F4m">
+                                <rect key="frame" x="0.0" y="51" width="414" height="811"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="scbcell" rowHeight="260" id="EaQ-bK-hCp" customClass="TableViewCell" customModule="SCBios" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="260"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EaQ-bK-hCp" id="WfV-g6-qbF">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZI6-ho-Bpg">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="260"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cmdev_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="cIq-eS-9MM">
+                                                    <rect key="frame" x="42" y="18" width="44" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loadingimg.png" translatesAutoresizingMaskIntoConstraints="NO" id="SDH-Df-UME">
+                                                    <rect key="frame" x="42" y="76" width="331" height="164"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.78000000000000003" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mq-3D-AQK">
+                                                    <rect key="frame" x="97" y="18" width="276" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.57999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ef8-tK-eDD">
+                                                    <rect key="frame" x="97" y="41" width="276" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="mAvatar" destination="cIq-eS-9MM" id="h5i-JC-M16"/>
+                                            <outlet property="mCardView" destination="ZI6-ho-Bpg" id="pOB-tm-2Sf"/>
+                                            <outlet property="mSubtitle" destination="Ef8-tK-eDD" id="hag-cI-L9V"/>
+                                            <outlet property="mTitle" destination="9mq-3D-AQK" id="g4b-ec-WNQ"/>
+                                            <outlet property="mYoutube" destination="SDH-Df-UME" id="J5m-Xx-yMp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="iVk-wd-jKG" id="mt6-iA-Q45"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="k2f-Sg-O2V"/>
                     </view>
+                    <connections>
+                        <outlet property="mTableView" destination="asT-Yk-F4m" id="8Q9-Ps-HAb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="keD-ak-QIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2012" y="610"/>
+            <point key="canvasLocation" x="2011.594202898551" y="609.375"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="L9A-2t-A9h">
@@ -225,6 +285,7 @@
                         <viewLayoutGuide key="safeArea" id="WTW-9n-4PD"/>
                     </view>
                     <connections>
+                        <outlet property="mQRCodeImageView" destination="ewm-cg-B4D" id="t7Z-2o-NdT"/>
                         <outlet property="mTextField" destination="Sf9-Xj-1n2" id="coX-o9-DK9"/>
                     </connections>
                 </viewController>
@@ -376,7 +437,9 @@
         <image name="5.png" width="95" height="95"/>
         <image name="6.png" width="95" height="95"/>
         <image name="camera_normal.png" width="192" height="236"/>
+        <image name="cmdev_icon.png" width="160" height="160"/>
         <image name="ios_training_header.jpg" width="2195" height="1901"/>
+        <image name="loadingimg.png" width="871" height="483"/>
         <image name="qr_code_generator.png" width="556" height="556"/>
         <image name="share_normal.png" width="192" height="236"/>
         <image name="upload_image.png" width="536" height="536"/>

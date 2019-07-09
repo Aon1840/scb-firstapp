@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -51,9 +51,16 @@
 		8A7F6FF722D31E0A0013A65A /* PageFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F6FF622D31E0A0013A65A /* PageFiveViewController.swift */; };
 		8A7F6FF922D31E1A0013A65A /* PageSixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7F6FF822D31E1A0013A65A /* PageSixViewController.swift */; };
 		8A7F6FFC22D31F070013A65A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A7F6FFB22D31F070013A65A /* WebKit.framework */; };
+		8ADE04A722D4514500EC90A8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE04A622D4514500EC90A8 /* TableViewCell.swift */; };
+		8ADE04A922D46FB800EC90A8 /* YoutubeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE04A822D46FB800EC90A8 /* YoutubeResponse.swift */; };
+		8ADE04AB22D4799400EC90A8 /* SCB+Additional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE04AA22D4799400EC90A8 /* SCB+Additional.swift */; };
+		8ADE04AF22D483D800EC90A8 /* DKLiveBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADE04AE22D483D800EC90A8 /* DKLiveBlurView.m */; };
+		C8DEC0D3D3651EE6AA182F35 /* Pods_SCBios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B0829522D488EBC2B903A5 /* Pods_SCBios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21B0829522D488EBC2B903A5 /* Pods_SCBios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCBios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E3E4670123D3024562EAEBB /* Pods-SCBios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCBios.debug.xcconfig"; path = "Target Support Files/Pods-SCBios/Pods-SCBios.debug.xcconfig"; sourceTree = "<group>"; };
 		8A7F6F9722D2E1910013A65A /* SCBios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCBios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7F6F9A22D2E1910013A65A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A7F6F9C22D2E1910013A65A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +107,14 @@
 		8A7F6FF622D31E0A0013A65A /* PageFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageFiveViewController.swift; sourceTree = "<group>"; };
 		8A7F6FF822D31E1A0013A65A /* PageSixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageSixViewController.swift; sourceTree = "<group>"; };
 		8A7F6FFB22D31F070013A65A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8ADE04A522D4374600EC90A8 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		8ADE04A622D4514500EC90A8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8ADE04A822D46FB800EC90A8 /* YoutubeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeResponse.swift; sourceTree = "<group>"; };
+		8ADE04AA22D4799400EC90A8 /* SCB+Additional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCB+Additional.swift"; sourceTree = "<group>"; };
+		8ADE04AD22D483D800EC90A8 /* DKLiveBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKLiveBlurView.h; sourceTree = "<group>"; };
+		8ADE04AE22D483D800EC90A8 /* DKLiveBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKLiveBlurView.m; sourceTree = "<group>"; };
+		8ADE04B122D485D500EC90A8 /* Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
+		8E2D60660E2451FE3EE21AB6 /* Pods-SCBios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCBios.release.xcconfig"; path = "Target Support Files/Pods-SCBios/Pods-SCBios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,18 +123,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A7F6FFC22D31F070013A65A /* WebKit.framework in Frameworks */,
+				C8DEC0D3D3651EE6AA182F35 /* Pods_SCBios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F9BA5E91EF466A64A9466D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E3E4670123D3024562EAEBB /* Pods-SCBios.debug.xcconfig */,
+				8E2D60660E2451FE3EE21AB6 /* Pods-SCBios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8A7F6F8E22D2E1910013A65A = {
 			isa = PBXGroup;
 			children = (
+				8ADE04B122D485D500EC90A8 /* Bridging_Header.h */,
+				8ADE04A522D4374600EC90A8 /* Podfile */,
 				8A7F6F9922D2E1910013A65A /* SCBios */,
 				8A7F6F9822D2E1910013A65A /* Products */,
 				8A7F6FFA22D31F070013A65A /* Frameworks */,
+				5F9BA5E91EF466A64A9466D7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +162,7 @@
 		8A7F6F9922D2E1910013A65A /* SCBios */ = {
 			isa = PBXGroup;
 			children = (
+				8ADE04AC22D483D800EC90A8 /* BlurUtil */,
 				8A7F6FAC22D2EAF50013A65A /* Resources */,
 				8A7F6F9A22D2E1910013A65A /* AppDelegate.swift */,
 				8A7F6F9C22D2E1910013A65A /* ViewController.swift */,
@@ -147,6 +176,9 @@
 				8A7F6FF422D31DEB0013A65A /* PageFourViewController.swift */,
 				8A7F6FF622D31E0A0013A65A /* PageFiveViewController.swift */,
 				8A7F6FF822D31E1A0013A65A /* PageSixViewController.swift */,
+				8ADE04A622D4514500EC90A8 /* TableViewCell.swift */,
+				8ADE04A822D46FB800EC90A8 /* YoutubeResponse.swift */,
+				8ADE04AA22D4799400EC90A8 /* SCB+Additional.swift */,
 			);
 			path = SCBios;
 			sourceTree = "<group>";
@@ -202,8 +234,18 @@
 			isa = PBXGroup;
 			children = (
 				8A7F6FFB22D31F070013A65A /* WebKit.framework */,
+				21B0829522D488EBC2B903A5 /* Pods_SCBios.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8ADE04AC22D483D800EC90A8 /* BlurUtil */ = {
+			isa = PBXGroup;
+			children = (
+				8ADE04AD22D483D800EC90A8 /* DKLiveBlurView.h */,
+				8ADE04AE22D483D800EC90A8 /* DKLiveBlurView.m */,
+			);
+			path = BlurUtil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A7F6FA922D2E1920013A65A /* Build configuration list for PBXNativeTarget "SCBios" */;
 			buildPhases = (
+				CDCCC103891A4C39F26A0CA7 /* [CP] Check Pods Manifest.lock */,
 				8A7F6F9322D2E1910013A65A /* Sources */,
 				8A7F6F9422D2E1910013A65A /* Frameworks */,
 				8A7F6F9522D2E1910013A65A /* Resources */,
+				9056FB965025B0CA9A11A088 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +348,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9056FB965025B0CA9A11A088 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SCBios/Pods-SCBios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SCBios/Pods-SCBios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SCBios/Pods-SCBios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDCCC103891A4C39F26A0CA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCBios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A7F6F9322D2E1910013A65A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -311,11 +397,15 @@
 			files = (
 				8A7F6FF322D31DE20013A65A /* PageThreeViewController.swift in Sources */,
 				8A7F6FF122D31DCF0013A65A /* PageTwoViewController.swift in Sources */,
+				8ADE04AF22D483D800EC90A8 /* DKLiveBlurView.m in Sources */,
 				8A7F6FEF22D31DC00013A65A /* PageOneViewController.swift in Sources */,
+				8ADE04A722D4514500EC90A8 /* TableViewCell.swift in Sources */,
 				8A7F6FF522D31DEB0013A65A /* PageFourViewController.swift in Sources */,
 				8A7F6F9D22D2E1910013A65A /* ViewController.swift in Sources */,
+				8ADE04A922D46FB800EC90A8 /* YoutubeResponse.swift in Sources */,
 				8A7F6F9B22D2E1910013A65A /* AppDelegate.swift in Sources */,
 				8A7F6FF922D31E1A0013A65A /* PageSixViewController.swift in Sources */,
+				8ADE04AB22D4799400EC90A8 /* SCB+Additional.swift in Sources */,
 				8A7F6FF722D31E0A0013A65A /* PageFiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +550,7 @@
 		};
 		8A7F6FAA22D2E1920013A65A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E3E4670123D3024562EAEBB /* Pods-SCBios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +561,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.scb.ios.SCBios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridging_Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -477,6 +569,7 @@
 		};
 		8A7F6FAB22D2E1920013A65A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E2D60660E2451FE3EE21AB6 /* Pods-SCBios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -487,6 +580,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.scb.ios.SCBios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Bridging_Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
